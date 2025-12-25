@@ -7,7 +7,7 @@ test.describe('Giriş İşlevselliği', () => {
     await Given('giriş sayfasındayım', null, { page }); 
   });
   
-  test('Geçerli bilgilerle başarılı giriş', { tag: ['@giris', '@smoke', '@pozitif'] }, async ({ When, Then, And, page }) => { 
+  test('Geçerli bilgilerle başarılı giriş burası', { tag: ['@giris', '@smoke', '@pozitif'] }, async ({ When, Then, And, page }) => { 
     await When('kullanıcı adı olarak "standard_user" giriyorum', null, { page }); 
     await And('şifre olarak "secret_sauce" giriyorum', null, { page }); 
     await And('giriş butonuna tıklıyorum', null, { page }); 
